@@ -1,0 +1,19 @@
+@import url('https://fonts.cdnfonts.com/css/rawline?styles=28860');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+@layer base {
+    html {
+        @apply text-base
+    }
+}
+
+a:hover {
+    color: black;
+}
