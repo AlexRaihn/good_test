@@ -14,8 +14,3 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
-import { httpClient } from '@/stores/httpClient'
-
-httpClient.get()
-</script>
