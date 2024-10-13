@@ -4,12 +4,12 @@ import type { RouteRecordRaw } from 'vue-router'
 
 const publicPages = <RouteRecordRaw>[
   {
-    path: 'home',
+    path: '/',
     name: 'HomeView',
     component: HomeView,
   },
   {
-    path: 'about',
+    path: '/about',
     name: 'AboutView',
     component: AboutView,
   },

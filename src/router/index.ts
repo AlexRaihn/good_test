@@ -1,10 +1,13 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import publicPages from '@/router/publicPages'
-import PublicIndex from '@/views/PublicIndex.vue'
+//import PublicIndex from '@/views/PublicIndex.vue'
 
 const routes = <RouteRecordRaw>[
-  {
-    path: '/',
+  ...publicPages,
+  /*
+  В идеале вот так, но для более корректной работы GitHubPages - будет вариант выше
+  * {
+    path: '/'
     name: 'PublicIndex',
     component: PublicIndex,
     meta: {
@@ -15,6 +18,7 @@ const routes = <RouteRecordRaw>[
     },
     children: [...publicPages],
   },
+  * */
 ]
 
 const router = createRouter({
